@@ -1,0 +1,30 @@
+runtime:
+  request_timeout: 12
+  request_interval_seconds: 0.8
+  max_items_per_source: 20
+  output_dir: "output"
+  data_dir: "data"
+
+platforms:
+  - id: "toutiao"
+    name: "今日头条"
+  - id: "baidu"
+    name: "百度热搜"
+  - id: "weibo"
+    name: "微博热搜"
+  - id: "zhihu"
+    name: "知乎热榜"
+  - id: "douyin"
+    name: "抖音热榜"
+  - id: "bilibili-hot-search"
+    name: "B站热搜"
+  - id: "tieba"
+    name: "贴吧"
+  - id: "thepaper"
+    name: "澎湃新闻"
+  - id: "wallstreetcn-hot"
+    name: "华尔街见闻"
+  - id: "cls-hot"
+    name: "财联社热门"
+  - id: "ifeng"
+    name: "凤凰网"

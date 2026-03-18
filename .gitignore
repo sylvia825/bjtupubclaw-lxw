@@ -1,0 +1,32 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# Local config & secrets
+.env
+ENV_FILE
+
+# LangGraph data & outputs
+data_langgraph/
+data_langgraph_hourly/
+output_langgraph/
+
+# Legacy outputs (保留以防以后切回旧版 agent)
+output/
+data/
+
+# Type checker / tooling caches
+.mypy_cache/
+.pytest_cache/
+

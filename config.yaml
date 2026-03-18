@@ -1,0 +1,45 @@
+runtime:
+  request_timeout: 12
+  request_interval_seconds: 0.8
+  max_items_per_source: 20
+  output_dir: "output"
+  data_dir: "data"
+
+# 📊 平台对比模式配置
+# 用于选择 2-3 个平台进行并排对比展示
+compare_mode:
+  enabled: false  # true 启用对比模式，false 使用原有的聚合模式
+  # 选择要对比的平台 ID（建议 2-3 个）
+  # 可选值：toutiao, baidu, weibo, zhihu, douyin, bilibili-hot-search, tieba, thepaper, wallstreetcn-hot, cls-hot, ifeng
+  platforms:
+    - weibo
+    - zhihu
+    - douyin
+  # 对比视图布局：side-by-side(并排) / grid(网格) / tabs(标签页)
+  layout: "side-by-side"
+  # 每个平台显示的热搜条数
+  top_n: 20
+
+platforms:
+  - id: "toutiao"
+    name: "今日头条"
+  - id: "baidu"
+    name: "百度热搜"
+  - id: "weibo"
+    name: "微博热搜"
+  - id: "zhihu"
+    name: "知乎热榜"
+  - id: "douyin"
+    name: "抖音热榜"
+  - id: "bilibili-hot-search"
+    name: "B 站热搜"
+  - id: "tieba"
+    name: "贴吧"
+  - id: "thepaper"
+    name: "澎湃新闻"
+  - id: "wallstreetcn-hot"
+    name: "华尔街见闻"
+  - id: "cls-hot"
+    name: "财联社热门"
+  - id: "ifeng"
+    name: "凤凰网"
